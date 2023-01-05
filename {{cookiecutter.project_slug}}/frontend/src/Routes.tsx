@@ -11,7 +11,7 @@ const Routes = () => {
 			<Suspense fallback={<SuspenseFallback />}>
 				<RRDRoutes>
 					<Route path='/' element={<Home />} />
-					<Route element={<NotFound />} />
+					<Route path='*' element={<NotFound />} />
 				</RRDRoutes>
 			</Suspense>
 		</BrowserRouter>
